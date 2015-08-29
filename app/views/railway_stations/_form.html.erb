@@ -1,0 +1,7 @@
+search_railway_stations
+<p>gbeug</p>
+<%= form_tag search_railway_stations_path, method: 'get', remote: true do %>
+    <%= select_tag "start", options_from_collection_for_select(@railway_stations, "id", "name") %>
+    <%= select_tag "end", options_from_collection_for_select(@railway_stations, "id", "name") %>
+    <%= submit_tag "Search" %>
+<% end %>

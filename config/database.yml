@@ -1,0 +1,7 @@
+development:
+  adapter: mysql2
+  database: train_search_app_dev
+  host: localhost
+  username: root
+  password: "root"
+  encoding: utf8
